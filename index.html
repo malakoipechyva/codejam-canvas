@@ -5,20 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./syles.css">
-    <script src="js/patterns.js"></script>
-    <script src="js/index.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="./js/patterns.js"></script>
+    <script src="./js/index.js"></script>
     <title>codejam-canvas</title>
 </head>
 
 <body>
     <header class="header">
         <div class="header--navbar">
-            <img src="assets/nav-icon.svg" alt="navigation">
+            <img src="./assets/nav-icon.svg" alt="navigation">
         </div>
         <h1 class="header--name">CodeJam - Pallete</h1>
         <div class="header--traflight">
             <img src="./assets/menu-icon.svg" alt="traflight">
         </div>
     </header>
+    <main class="content">
+        <aside class="content--sidebar">
+            <ul class="content--sidebar--list">
+                <li><img src="./assets/eye-dropper.svg" alt="eye-dropper">Paint bucket</li>
+                <li><img src="./assets/fill-drip.svg" alt="fill-drip">Choose color</li>
+                <li><img src="./assets/arrows-alt.svg" alt="arrows-alt">Move</li>
+                <li><img src="./assets/exchange-alt.svg" alt="exchange-alt">Transform</li>
+            </ul>
+            <ul class="content--sidebar--list">
+                <li>
+                    <div class="color--grey"></div>
+                    <span>Current color</span>
+                </li>
+                <li>
+                    <div class="color--green"></div>
+                    <span>Prev color</span>
+                </li>
+                <li>
+                    <div class="color--red"></div>
+                    <span>red</span>   
+                </li>
+                <li>
+                    <div class="color--blue"></div>
+                    <span>blue</span>
+                </li>
+            </ul>
+        </aside>
+        <section class="canvas">
+            <canvas id="canvas" width="512" height="512"></canvas>
+        </section>
+        <aside class="switcher">
+            <ul class="content--sidebar--list">
+                <li>4x4</li>
+                <li>32x32</li>
+                <li>256x256</li>
+            </ul>
+        </aside>
+    </main>
+</body>
+</html>
 
     
